@@ -103,6 +103,7 @@ class Student:
         return Student.stuCount
 
 class PrimaryStudent(Student):
+
     primaryStuCount=0
 
     def canRecite(self):
@@ -113,6 +114,7 @@ class PrimaryStudent(Student):
 
 
 class MiddleStudent(Student):
+
     middleStuCount=0
 
     def canChemistry(self):
@@ -123,11 +125,16 @@ class MiddleStudent(Student):
          
         
 ========================= RESTART: C:/Python27/1.py =========================
+
 >>> m = MiddleStudent('middleSt1','213','1211','female')
 >>> m.canPyhics()
+
 primary student can Pyhics
+
 >>> m.canPyhics()
+
 primary student can Pyhics
+
 >>> MiddleStudent.middleStuCount
 0
 >>> 
