@@ -5,6 +5,7 @@
 
 
 class student:
+
     stu_count=0
     stu_count_wl163 = 0
     stu_count_wl161 = 0
@@ -44,7 +45,8 @@ g = student('333','sdffd','wl163','0')
 
 
 
-2.
+2.调用子类
+
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
  
@@ -84,6 +86,7 @@ c.getAttr()          # 再次调用父类的方法 - 获取属性值
 3.创建中小学生类
 
 class Student:
+
     stuCount = 0
 
     def __init__(self,name,stu_no,class_no,gender):
