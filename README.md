@@ -82,6 +82,7 @@ c.getAttr()          # 再次调用父类的方法 - 获取属性值
 
 
 3.创建中小学生类
+
 class Student:
     stuCount = 0
 
