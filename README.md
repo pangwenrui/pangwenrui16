@@ -127,6 +127,7 @@ class MiddleStudent(Student):
 ========================= RESTART: C:/Python27/1.py =========================
 
 >>> m = MiddleStudent('middleSt1','213','1211','female')
+
 >>> m.canPyhics()
 
 primary student can Pyhics
