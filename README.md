@@ -81,6 +81,51 @@ c.getAttr()          # 再次调用父类的方法 - 获取属性值
 父类属性 : 200
 
 
+3.创建中小学生类
+class Student:
+    stuCount = 0
 
+    def __init__(self,name,stu_no,class_no,gender):
+        self.name = name
+        self.stu_no = stu_no
+        self.class_no = class_no
+        self.gender = gender
+        Student.stuCount +=1
+
+    def study(self):
+        print "Student can study"
+
+    def getStuCount(self):
+        return Student.stuCount
+
+class PrimaryStudent(Student):
+    primaryStuCount=0
+
+    def canRecite(self):
+        print"primary student can recite"
+
+    def canOral(self):
+         print"primary student can oral"
+
+
+class MiddleStudent(Student):
+    middleStuCount=0
+
+    def canChemistry(self):
+        print"primary student can Chemistry "
+
+    def canPyhics(self):
+         print"primary student can Pyhics"
+         
+        
+========================= RESTART: C:/Python27/1.py =========================
+>>> m = MiddleStudent('middleSt1','213','1211','female')
+>>> m.canPyhics()
+primary student can Pyhics
+>>> m.canPyhics()
+primary student can Pyhics
+>>> MiddleStudent.middleStuCount
+0
+>>> 
 
 
