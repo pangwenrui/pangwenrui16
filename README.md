@@ -1,57 +1,43 @@
-
-
-访问列表中的值
-
-list1 = ['physics', 'chemistry', 1997, 2000];
-list2 = [1, 2, 3, 4, 5, 6, 7 ];
-
-print "list1[0]: ", list1[0]
-print "list2[1:5]: ", list2[1:5]
-以上实例输出结果：
-list1[0]:  physics
-list2[1:5]:  [2, 3, 4, 5]
-
-
-更新列表
-
-list = ['physics', 'chemistry', 1997, 2000];
-
-print "Value available at index 2 : "
-print list[2];
-list[2] = 2001;
-print "New value available at index 2 : "
-print list[2];
-以上实例输出结果：
-Value available at index 2 :
-1997
-New value available at index 2 :
-2001
-
-删除列表元素
-可以使用 del 语句来删除列表的的元素，如下实例：
-
+访问元组
+元组可以使用下标索引来访问元组中的值，如下实例:
 #!/usr/bin/python
 
-list1 = ['physics', 'chemistry', 1997, 2000];
+tup1 = ('physics', 'chemistry', 1997, 2000);
+tup2 = (1, 2, 3, 4, 5, 6, 7 );
 
-print list1;
-del list1[2];
-print "After deleting value at index 2 : "
-print list1;
+print "tup1[0]: ", tup1[0]
+print "tup2[1:5]: ", tup2[1:5]
 以上实例输出结果：
-['physics', 'chemistry', 1997, 2000]
-After deleting value at index 2 :
-['physics', 'chemistry', 2000]
+tup1[0]:  physics
+tup2[1:5]:  (2, 3, 4, 5)
+
+修改元组
+元组中的元素值是不允许修改的，但我们可以对元组进行连接组合，如下实例:
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+tup1 = (12, 34.56);
+tup2 = ('abc', 'xyz');
 
 
-Python列表截取
-Python 的列表截取实例如下：
->>> L = ['Google', 'Runoob', 'Taobao']
->>> L[2]
-'Taobao'
->>> L[-2]
-'Runoob'
->>> L[1:]
-['Runoob', 'Taobao']
->>> 
+# 创建一个新的元组
+tup3 = tup1 + tup2;
+print tup3;
+以上实例输出结果：
+(12, 34.56, 'abc', 'xyz')
 
+删除元组
+tup = ('physics', 'chemistry', 1997, 2000);
+
+print tup;
+del tup;
+print "After deleting tup : "
+print tup;
+以上实例元组被删除后，输出变量会有异常信息，输出如下所示：
+('physics', 'chemistry', 1997, 2000)
+After deleting tup :
+Traceback (most recent call last):
+  File "test.py", line 9, in <module>
+    print tup;
+NameError: name 'tup' is not defined
+  
