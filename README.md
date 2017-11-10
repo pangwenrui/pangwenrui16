@@ -42,3 +42,16 @@ print list1;
 ['physics', 'chemistry', 1997, 2000]
 After deleting value at index 2 :
 ['physics', 'chemistry', 2000]
+
+
+Python列表截取
+Python 的列表截取实例如下：
+>>> L = ['Google', 'Runoob', 'Taobao']
+>>> L[2]
+'Taobao'
+>>> L[-2]
+'Runoob'
+>>> L[1:]
+['Runoob', 'Taobao']
+>>> 
+
