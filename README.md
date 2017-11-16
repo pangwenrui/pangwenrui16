@@ -65,3 +65,10 @@ request = urllib2.Request(geturl)
 response = urllib2.urlopen(request)
 print response.read()
 
+设置Headers
+>>>import urllib2
+>>> user_agent='Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/62.0.3202.75 Safari/537.36'
+>>> urllib2.Request('http://www.baidu.com',headers={ 'User=Agent':user_agent})
+
+<urllib2.Request instance at 0x021D4DC8>
+
